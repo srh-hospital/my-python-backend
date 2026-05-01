@@ -4,10 +4,12 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, change "*" to your Vercel URL
+    allow_origins=[
+        "https://your-app.vercel.app",  # your Vercel URL
+        "http://localhost:3000",         # for local dev
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
