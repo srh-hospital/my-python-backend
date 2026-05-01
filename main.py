@@ -7,7 +7,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://your-app.vercel.app",  # your Vercel URL
+        "https://my-frontend-git-main-srh-hospitals-projects.vercel.app/",  # your Vercel URL
         "http://localhost:3000",         # for local dev
     ],
     allow_credentials=True,
